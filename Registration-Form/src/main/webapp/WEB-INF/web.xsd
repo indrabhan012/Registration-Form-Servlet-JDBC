@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="element">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="web-app">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="display-name" type="xs:string" />
+							<xs:element name="welcome-file-list">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="welcome-file" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="version" type="xs:decimal" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

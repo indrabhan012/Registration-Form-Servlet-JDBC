@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+	crossorigin="anonymous">
+<title>Registration Form</title>
+
+<style type="text/css">
+.container {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	background-image: url("bimage.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h2 {
+	text-align: center;
+	font-family: Georgia, serif;
+	color: red;
+	text-shadow: #9b59b6;
+}
+
+.hello {
+	text-align: center;
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
+		rgba(71, 101, 125, 1) 41%, rgba(0, 0, 0, .30));
+	max-width: 520px;
+	width: 100%;
+	background-color: #fff;
+	padding: 25px 30px;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	margin: 15px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+	text-align: center;
+	margin: 15px;
+}
+
+.form-group label {
+	display: block;
+	font-family:  Verdana, sans-serif;
+	margin-bottom: 5px;
+}
+
+.form-group input {
+	width: 60%;
+	font-family: Georgia, serif;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+.form-group button {
+	text-align: center;
+	background-color: green;
+	width: 60%;
+	font-size: 15px;
+	font-family: Georgia, serif;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	font-family: Georgia, serif;
+	width: 60%;
+}
+
+.form-group button:hover {
+	background-color: red;
+	color: white;
+	font-size: 16px;
+}
+
+#course {
+	width: 60%;
+	font-family: Georgia, serif;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+.form-group select {
+	width: 60%;
+	font-family: Georgia, serif;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+</style>
+
+</head>
+<body class="container">
+	<div class="hello">
+		<h2>Registration Form</h2>
+
+		<form action="Insert" method="post">
+			<div class="form-group">
+				<label for="fname">First Name</label> <input type="text" id="name"
+					name="fname" required>
+			</div>
+			<div class="form-group">
+				<label for="last-name">Last Name</label> <input type="text"
+					id="lname" name="lname" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label> <input type="email" id="email"
+					name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="pnumber">Phone Number</label> <input type="number"
+					id="pnumber" name="pnumber">
+			</div>
+			<div class="form-group">
+				<label for="age">Age</label> <input type="number" id="age"
+					name="age">
+			</div>
+			<div class="form-group">
+				<label for="age">Address</label> <input type="text" id="address"
+					name="address">
+			</div>
+			<div class="form-group">
+				<label for="age">Course</label> <select name="course" id="course"
+					class="select">
+					<option value="JFS">Java Full Stack</option>
+					<option value="Python">Python Full Stack</option>
+					<option value="Testing">Software Testing</option>
+					<option value="Analysis">Software Analysis</option>
+				</select>
+			</div>
+			<br> <br>
+			<div class="form-group">
+				<button type="submit" name="btn">Submit</button>
+			</div>
+
+		</form>
+	</div>
+
+</body>
+</html>
